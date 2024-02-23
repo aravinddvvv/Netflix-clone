@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: #fff;
+}
+
+  
+  .app {
+    position: relative;
+  }
+  
+  .loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  #loading-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire container */
+  }
+  
+  .content-container {
+    display: none; /* Initially hide the content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Set a background color for your content */
+    z-index: 9998; /* Lower z-index to be behind the video */
+  }
+  
